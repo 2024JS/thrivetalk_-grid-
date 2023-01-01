@@ -1,0 +1,97 @@
+._4physical_Health {
+  display: grid;
+  grid-template: auto / repeat(auto-fill, minmax(200px, 33.333%));
+  height: 960px;
+  font-family: 'Larsseit', serif;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.006em;
+  color: #FFFFFF;
+
+  ._4physical_Health {
+    &__rect-for-border {
+      height: 96px;
+      grid-area: a;
+      border-bottom: solid #FFE2DE 1px;
+      box-shadow: 0 1px 0 #FFFFFF;
+    }
+
+    &__eclipse {
+      grid-area: b;
+    }
+
+    &__text {
+      padding-top: 15px;
+      width: 150px;
+      grid-area: c;
+    }
+  }
+
+  &__phys {
+    background: #22356F;
+    @extend %_4grid_wrapper;
+  }
+
+  &__mental {
+    background: #0052C1;
+    @extend %_4grid_wrapper;
+  }
+
+  &__nutri {
+    background-image: url("img/4-smuzi.png");
+    background-repeat: round;
+    @extend %_4grid_wrapper
+  }
+
+  &__gymn {
+    background: #62D0DF;
+    @extend %_4grid_wrapper
+  }
+
+  &__cros {
+    background: #DEE1FF;
+    @extend %_4grid_wrapper
+  }
+
+  &__aerob {
+    background: #8F00FF;
+    @extend %_4grid_wrapper
+  }
+}
+
+%_4grid_wrapper {
+  justify-content: start;
+  align-items: center;
+  text-align: left;
+  padding-left: 8%;
+  padding-right: 10%;
+  display: grid;
+  grid-template-areas: "a a" "b c";
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 20px 100%;
+}
+
+@media (max-width: 900px) {
+  ._4grid_wrapper {
+    grid-template: auto / 1fr;
+    padding: 0;
+  }
+
+  ._4physical_Health {
+    height: 480px;
+
+    &__text {
+      width: 130px;
+    }
+
+    &__rect-for-border {
+      width: 90%;
+    }
+
+    > div {
+      padding: 5px;
+      justify-content: start;
+      text-align: left;
+    }
+  }
+}

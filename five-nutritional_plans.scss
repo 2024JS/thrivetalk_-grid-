@@ -1,0 +1,55 @@
+._5nutritional_plans {
+  display: grid;
+  grid-template: auto / repeat(auto-fill, minmax(280px, 33.333%));
+  font-family: 'Larsseit', serif;
+  letter-spacing: -0.03em;
+  margin-left: -50px;
+  padding-bottom: 100px;
+
+  &__nutri {
+    grid-template: 1fr 1fr / 1fr;
+    height: 240px;
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+    color: #22356F;
+    padding: 55px 0 0 105px;
+  }
+
+  &__body {
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(34, 53, 111, 0.5);
+    width: 298px;
+    padding: 28px 77px 37px 105px;
+  }
+}
+
+@media (max-width: 1200px) {
+  ._5nutritional_plans {
+    gap: 10px;
+    padding-top: 150px;
+    margin-left: 0;
+
+    &__nutri {
+      height: auto;
+    }
+
+    &__title {
+      padding: 5%;
+    }
+
+    &__body {
+      padding: 5%;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  ._5nutritional_plans {
+    padding-top: 800px;
+  }
+}

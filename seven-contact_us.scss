@@ -1,0 +1,71 @@
+._7contact_us {
+  display: grid;
+  justify-content: stretch;
+  width: 100%;
+  grid-template: 1fr / repeat(auto-fit, minmax(350px, auto));
+
+  &__main {
+    font-family: 'Larsseit', serif;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 100%;
+    row-gap: 30px;
+    align-items: center;
+    align-content: center;
+    background-color: #22356F;
+    color: #FFFFFF;
+
+    &__title {
+      font-size: 16px;
+      line-height: 12px;
+      letter-spacing: 0.06em;
+      font-weight: bold;
+    }
+
+    &__title {
+      font-size: 64px;
+      line-height: 94px;
+      letter-spacing: -0.01em;
+
+    }
+
+    &__text {
+      font-size: 36px;
+      line-height: 53px;
+      letter-spacing: -0.005em;
+      max-width: 579px;
+    }
+
+    &__footer {
+      font-size: 16px;
+      line-height: 23px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.1em;
+      color: #62D0DF;
+    }
+  }
+
+  &__img {
+    img {
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.text-thrive {
+  color: #6CD3E1;
+}
+
+@media (min-width: 1200px) {
+  ._7contact_us {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto;
+
+    &__main {
+      padding: 103px 0 42px 180px;
+    }
+  }
+}
+
