@@ -19,7 +19,8 @@
 
   &__header {
     display: grid;
-    grid-template: 50px / auto auto auto;
+    /*grid-template: 50px / auto auto auto;*/
+    grid-template: 1fr / repeat(auto-fit, minmax(180px, auto));
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
@@ -58,7 +59,7 @@
 
   &__main {
     display: grid;
-    grid-template: 1fr / repeat(auto-fit, minmax(400px, auto));
+    grid-template: 1fr / repeat(auto-fit, minmax(300px, auto));
 
     &__first-content {
       display: grid;
@@ -124,6 +125,15 @@
   }
 }
 
+@media (max-width: 600px) {
+  ._1helping_you_thrive{
+    row-gap: 60px;
+    &__header {
+      row-gap: 10px;
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   ._1helping_you_thrive__main__first-content {
     padding-top: 164px;
@@ -132,3 +142,5 @@
     padding-left: 40px;
   }
 }
+
+

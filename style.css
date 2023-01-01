@@ -17,7 +17,8 @@
 }
 ._1helping_you_thrive__header {
   display: grid;
-  grid-template: 50px/auto auto auto;
+  /*grid-template: 50px / auto auto auto;*/
+  grid-template: 1fr/repeat(auto-fit, minmax(180px, auto));
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
@@ -51,7 +52,7 @@
 }
 ._1helping_you_thrive__main {
   display: grid;
-  grid-template: 1fr/repeat(auto-fit, minmax(400px, auto));
+  grid-template: 1fr/repeat(auto-fit, minmax(300px, auto));
 }
 ._1helping_you_thrive__main__first-content {
   display: grid;
@@ -106,6 +107,14 @@
   align-items: end;
 }
 
+@media (max-width: 600px) {
+  ._1helping_you_thrive {
+    row-gap: 60px;
+  }
+  ._1helping_you_thrive__header {
+    row-gap: 10px;
+  }
+}
 @media (min-width: 1200px) {
   ._1helping_you_thrive__main__first-content {
     padding-top: 164px;
@@ -117,7 +126,7 @@
 ._2why_Thrive {
   display: grid;
   justify-content: space-between;
-  grid-template: 1fr/repeat(auto-fit, minmax(440px, auto));
+  grid-template: 1fr/repeat(auto-fit, minmax(300px, auto));
   width: 100%;
   background: #62D0DF;
 }
@@ -151,7 +160,7 @@
 }
 ._3about_us {
   display: grid;
-  grid-template: 1fr/repeat(auto-fit, minmax(440px, auto));
+  grid-template: 1fr/repeat(auto-fit, minmax(300px, auto));
   font-family: "Larsseit", serif;
 }
 ._3about_us__title {
@@ -164,7 +173,7 @@
 }
 ._3about_us__body {
   display: grid;
-  grid-template: 1fr auto/repeat(auto-fit, minmax(440px, auto));
+  grid-template: 1fr auto/repeat(auto-fit, minmax(300px, auto));
   justify-items: center;
 }
 ._3about_us__body__text1 {
