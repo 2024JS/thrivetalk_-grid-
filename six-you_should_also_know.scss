@@ -56,6 +56,12 @@
 
     &__main {
       margin-left: 106px;
+      &__title{
+        padding-top: 103px;
+      }
+      &__footer{
+        padding-bottom: 42px;
+      }
     }
   }
 }

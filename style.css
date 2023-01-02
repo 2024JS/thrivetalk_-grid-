@@ -4,6 +4,10 @@
   font-weight: 400;
   font-style: normal;
 }
+body {
+  margin: 0;
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
@@ -81,6 +85,10 @@
   align-items: center;
   padding-bottom: 10px;
 }
+._1helping_you_thrive__main .first-content__buttons button {
+  border: none;
+  padding: 10px;
+}
 ._1helping_you_thrive__main .first-content__buttons__who {
   background: #F9B640;
   font-size: 16px;
@@ -97,7 +105,6 @@
   align-items: center;
   letter-spacing: 0.1em;
   background-color: transparent;
-  border: none;
 }
 ._1helping_you_thrive__mans_img {
   max-width: 100%;
@@ -160,7 +167,7 @@
 }
 ._3about_us {
   display: grid;
-  grid-template: 1fr/repeat(auto-fit, minmax(300px, auto));
+  grid-template: 1fr/1fr 1fr;
   font-family: "Larsseit", serif;
 }
 ._3about_us__title {
@@ -173,7 +180,7 @@
 }
 ._3about_us__body {
   display: grid;
-  grid-template: 1fr auto/repeat(auto-fit, minmax(300px, auto));
+  grid-template: 1fr/repeat(1, minmax(300px, auto));
   justify-items: center;
 }
 ._3about_us__body__text1 {
@@ -202,8 +209,14 @@
   }
 }
 @media (max-width: 910px) {
+  ._3about_us {
+    grid-template: 1fr/repeat(auto-fit, minmax(300px, auto));
+  }
   ._3about_us__title {
     justify-self: center;
+  }
+  ._3about_us__body {
+    grid-template: 1fr auto/repeat(auto-fit, minmax(300px, auto));
   }
 }
 ._3-1weigh-wrapper {
@@ -425,6 +438,12 @@
   }
   ._6you_should_also_know__main {
     margin-left: 106px;
+  }
+  ._6you_should_also_know__main__title {
+    padding-top: 103px;
+  }
+  ._6you_should_also_know__main__footer {
+    padding-bottom: 42px;
   }
 }
 ._7contact_us {
