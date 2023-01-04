@@ -66,3 +66,12 @@
   }
 }
 
+@media (max-width: 660px) {
+  ._6you_should_also_know {
+    padding-bottom: 50px;
+
+    &__main {
+      padding-top: 50px;
+    }
+  }
+}

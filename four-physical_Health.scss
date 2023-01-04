@@ -95,3 +95,29 @@
     }
   }
 }
+
+@media (max-width: 619px) {
+  ._4physical_Health {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 418px) {
+  ._4physical_Health {
+    grid-template: 1fr / 1fr;
+    padding-bottom: 1680px;
+    &__text {
+      width: 100%;
+    }
+  }
+  %_4grid_wrapper {
+    grid-template-rows: 60px 300px;
+    grid-template-columns: 20px 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+

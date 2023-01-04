@@ -31,7 +31,7 @@
 @media (max-width: 1200px) {
   ._5nutritional_plans {
     gap: 10px;
-    padding-top: 150px;
+    padding-top: 100px;
     margin-left: 0;
 
     &__nutri {
@@ -48,8 +48,3 @@
   }
 }
 
-@media (max-width: 450px) {
-  ._5nutritional_plans {
-    padding-top: 800px;
-  }
-}

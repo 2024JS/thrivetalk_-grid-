@@ -69,3 +69,16 @@
   }
 }
 
+@media (max-width: 600px) {
+  ._7contact_us {
+    &__main {
+      &__header {
+        margin-top: 50px;
+      }
+
+      &__footer {
+        margin-bottom: 50px
+      }
+    }
+  }
+}
