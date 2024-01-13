@@ -9,6 +9,7 @@
   &__nutri {
     grid-template: 1fr 1fr / 1fr;
     height: 240px;
+
   }
 
   &__title {
@@ -17,6 +18,11 @@
     letter-spacing: -0.03em;
     color: #22356F;
     padding: 55px 0 0 105px;
+    @media (max-width: 419px) {
+      justify-self: center;
+      text-align: center;
+
+    }
   }
 
   &__body {
@@ -46,5 +52,16 @@
       padding: 5%;
     }
   }
+}
+
+@media (max-width: 585px) {
+  ._5nutritional_plans{
+    justify-content: center;
+  ._5nutritional_plans__nutri{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}}
+  
 }
 

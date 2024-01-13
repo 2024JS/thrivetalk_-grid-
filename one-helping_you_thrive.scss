@@ -8,6 +8,7 @@
 
 body{
   margin: 0;
+
 }
 
 .wrapper {
@@ -132,8 +133,13 @@ body{
 }
 
 @media (max-width: 600px) {
+  body {
+    text-align: center;
+  }
   ._1helping_you_thrive{
     row-gap: 60px;
+    justify-items: center;
+    justify-content: center;
     &__header {
       row-gap: 10px;
     }

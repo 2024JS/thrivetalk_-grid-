@@ -115,8 +115,13 @@ body {
 }
 
 @media (max-width: 600px) {
+  body {
+    text-align: center;
+  }
   ._1helping_you_thrive {
     row-gap: 60px;
+    justify-items: center;
+    justify-content: center;
   }
   ._1helping_you_thrive__header {
     row-gap: 10px;
@@ -352,15 +357,40 @@ body {
     text-align: left;
   }
 }
+@media (max-width: 900px) and (max-width: 419px) {
+  ._4physical_Health > div {
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-self: center;
+    justify-content: center !important;
+  }
+}
 @media (max-width: 619px) {
   ._4physical_Health {
     padding-bottom: 100px;
+    max-height: 600px;
+    /* &__phys {
+       text-align: center;
+       flex-wrap: wrap;
+       display: flex;
+       justify-self: center;
+       justify-content: center!important;
+     }*/
+  }
+  ._4physical_Health__rect-for-border {
+    max-height: 50px;
+  }
+  ._4physical_Health__wrapper {
+    display: flex;
+    text-align: center;
+    align-content: center;
   }
 }
 @media (max-width: 418px) {
   ._4physical_Health {
     grid-template: 1fr/1fr;
-    padding-bottom: 1680px;
+    padding-bottom: 200px;
   }
   ._4physical_Health__text {
     width: 100%;
@@ -393,6 +423,12 @@ body {
   color: #22356F;
   padding: 55px 0 0 105px;
 }
+@media (max-width: 419px) {
+  ._5nutritional_plans__title {
+    justify-self: center;
+    text-align: center;
+  }
+}
 ._5nutritional_plans__body {
   font-size: 16px;
   line-height: 25px;
@@ -415,6 +451,16 @@ body {
   }
   ._5nutritional_plans__body {
     padding: 5%;
+  }
+}
+@media (max-width: 585px) {
+  ._5nutritional_plans {
+    justify-content: center;
+  }
+  ._5nutritional_plans ._5nutritional_plans__nutri {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
   }
 }
 ._6you_should_also_know {
@@ -629,6 +675,10 @@ body {
 @media (max-width: 600px) {
   ._8some_info {
     padding-bottom: 20px;
+    justify-content: center;
+  }
+  ._8some_info ._8some_info__main__column {
+    justify-self: center;
   }
   ._8some_info__img {
     padding-bottom: 20px;
